@@ -1,0 +1,376 @@
+<html><head><base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mocha Mousse - The People's Meme Coin!</title>
+<style>
+:root {
+  --primary: #6B4423;
+  --secondary: #A67B5B;
+  --accent: #D4A276;
+  --light: #F5E6D3;
+  --dark: #2C1810;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--light), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.moose-logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.cta-btn {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 1rem 0;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.features {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  padding: 2rem;
+  border-radius: 15px;
+  background: var(--light);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.tokenomics {
+  background: var(--light);
+  text-align: center;
+}
+
+.chart-container {
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+}
+
+.intro-section, .events-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.intro-section h2, .events-section h2 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.event-card {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.footer {
+  background: var(--dark);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.disclaimer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+.whitepaper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.whitepaper h2 {
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+}
+
+.whitepaper h3 {
+  color: var(--secondary);
+  margin: 1.5rem 0 1rem;
+}
+
+.whitepaper ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.whitepaper .phase {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.whitepaper-nav {
+  position: sticky;
+  top: 0;
+  background: var(--light);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.whitepaper-nav a {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+}
+
+.whitepaper-nav a:hover {
+  text-decoration: underline;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <img src="/a/51826cd2-31fa-44ea-a026-40e03143d219" class="moose-logo floating" alt="Mocha Mousse Logo">
+    <h1>Sip Into the Future with Mocha Mousse</h1>
+    <p class="subtitle">Join our community and celebrate 2025 with a fun and innovative cryptocurrency.</p>
+    <button class="cta-btn">Get Started</button>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2>What is Mocha Mousse?</h2>
+  <p>Mocha Mousse is a playful, community-driven meme coin designed for everyone who loves to explore the exciting world of cryptocurrency. With our unique mascot—a moose savoring a delicious mocha—we aim to blend creativity, security, and fun into a seamless digital currency experience. Together, we can build a safe, diverse, and engaging crypto community!</p>
+</section>
+
+<section class="section">
+  <div class="features">
+    <div class="feature-card">
+      <h3>Community-Centric</h3>
+      <p>Built on the principles of inclusivity and collaboration. Everyone's voice matters!</p>
+    </div>
+    <div class="feature-card">
+      <h3>Rug-Pull Protection</h3>
+      <p>Commitment to safety with liquidity locks, audits, and transparent practices.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Exciting Engagements</h3>
+      <p>Participate in fun contests and connect with fellow Mocha Mousse enthusiasts.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tokenomics">
+  <h2>Tokenomics</h2>
+  <div class="chart-container">
+    <canvas id="tokenomicsChart"></canvas>
+  </div>
+  <div class="tokenomics-details">
+    <p>Our tokenomics is designed to reward our community while ensuring a stable and secure foundation for growth.</p>
+    <ul style="list-style: none; margin-top: 1rem;">
+      <li>65% Liquidity Pool (Burned)</li>
+      <li>20% Team Wallet (Locked for 1 Year)</li>
+      <li>15% Marketing, Development and Community Rewards</li>
+    </ul>
+  </div>
+</section>
+
+<section class="events-section">
+  <h2>Upcoming Events</h2>
+  <div class="event-card">
+    <h3>Video & GIF Creation Contest</h3>
+    <p>Get in on the action! Create your best Mocha Mousse-themed video or GIF, and get a chance to win 1% of the tokens.</p>
+    <ul style="list-style: none; margin-top: 1rem;">
+      <li>Prize: 1% of the total tokens</li>
+      <li>Eligibility: Must hold at least 0.5% of MOOSE tokens</li>
+      <li>Duration: Contest ends 1 February 2025</li>
+    </ul>
+  </div>
+</section>
+
+<section class="whitepaper" id="whitepaper">
+  <div class="whitepaper-nav">
+    <a href="#introduction">Introduction</a>
+    <a href="#token-overview">Token Overview</a>
+    <a href="#mission">Mission</a>
+    <a href="#safety">Safety</a>
+    <a href="#roadmap">Roadmap</a>
+  </div>
+
+  <h2 id="introduction">Mocha Mousse White Paper</h2>
+  
+  <h3>Introduction</h3>
+  <p>Welcome to Mocha Mousse, the exciting new meme coin that embodies the spirit of 2025! As a unique token in the crypto space, Mocha Mousse does not just represent a currency; it represents a community of like-minded individuals who believe in innovation, fun, and decentralized finance. Our mascot, a playful moose enjoying a delicious mocha, is a symbol of our desire to combine creativity with financial opportunity.</p>
+
+  <h3 id="token-overview">Token Overview</h3>
+  <ul>
+    <li>Token Name: Mocha Mousse</li>
+    <li>Symbol: MOOSE</li>
+    <li>Total Supply: 1,000,000,000 MOOSE</li>
+    <li>Blockchain: Solana</li>
+  </ul>
+
+  <h3 id="mission">Our Mission</h3>
+  <p>Mocha Mousse aims to create a meme coin that is accessible to everyone, fostering engagement and fun within the crypto community. We strongly believe that this currency should be designed for the people, allowing them to enjoy the benefits of decentralization while ensuring safety against potential risks associated with meme coins.</p>
+
+  <h3 id="safety">Safety Features</h3>
+  <div class="feature-card">
+    <h4>Rug-Pull Safety Measures:</h4>
+    <ul>
+      <li>Liquidity Lock: A significant portion of the liquidity will be locked for a period to maintain price stability.</li>
+      <li>Transparency: Comprehensive audits to ensure there are no backdoors or hidden features.</li>
+      <li>Community Governance: Token holders will have a say in significant decisions.</li>
+    </ul>
+  </div>
+
+  <h3 id="roadmap">Roadmap</h3>
+  <div class="phase">
+    <h4>Phase 1: Pre-launch</h4>
+    <ul>
+      <li>Community Building: Establish social media presence</li>
+      <li>Develop marketing strategies</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h4>Phase 2: Launch (Q1 2025)</h4>
+    <ul>
+      <li>Official launch of the Mocha Mousse token</li>
+      <li>Release of the website with educational portal</li>
+      <li>Begin the Video & GIF creation contest</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h4>Phase 3: Post-launch (Q2 2025)</h4>
+    <ul>
+      <li>Explore partnerships with other crypto projects</li>
+      <li>Launch of staking options for holders</li>
+      <li>Continue community engagement</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h4>Phase 4: Expansion (Q3 2025 and beyond)</h4>
+    <ul>
+      <li>Explore DeFi features like yield farming</li>
+      <li>Listing on popular exchanges</li>
+      <li>Development of merchandise</li>
+    </ul>
+  </div>
+
+  <h3>Conclusion</h3>
+  <p>Mocha Mousse is more than just a meme coin; it's an opportunity for crypto enthusiasts and newcomers alike to be part of something special. Join us as we venture into 2025 with a community-driven, fun, and secure cryptocurrency.</p>
+</section>
+
+<footer class="footer">
+  <div class="social-links">
+    <a href="https://twitter.com/MochaMooseCoin">Twitter</a>
+    <a href="https://discord.gg/mochamousse">Discord (Coming Soon)</a>
+  </div>
+  <p>Have questions or want to collaborate? Reach out to our team at X (Twitter): @MochaMooseCoin</p>
+  <p class="disclaimer">Please do thorough research before investing in any cryptocurrency. Your participation in Mocha Mousse is at your own risk.</p>
+</footer>
+
+<script>
+const ctx = document.getElementById('tokenomicsChart').getContext('2d');
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Liquidity Pool', 'Team Wallet', 'Marketing & Development'],
+        datasets: [{
+            data: [65, 20, 15],
+            backgroundColor: [
+                'var(--primary)',
+                'var(--secondary)',
+                'var(--accent)'
+            ]
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom'
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>
